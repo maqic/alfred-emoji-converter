@@ -1,13 +1,13 @@
 {
   "name": "alfred-emoji-converter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A text to emoji converter powered by ChatGPT",
   "main": "src/index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "alfy-init",
-		"preuninstall": "alfy-cleanup"
+    "preuninstall": "alfy-cleanup"
   },
   "repository": {
     "type": "git",
