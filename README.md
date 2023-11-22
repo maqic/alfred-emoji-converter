@@ -37,6 +37,12 @@ npm i -g alfred-emoji-converter
 - Type: String
 - Default: gpt-3.5-turbo
 
+### USE_CACHE
+
+- Cache result or not
+- Type: Boolean
+- Default: true
+
 ## Usage
 
 - Invoke Alfred, enter the keyword `emoji`, and input the description.

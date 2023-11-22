@@ -24,7 +24,8 @@
   },
   "homepage": "https://github.com/maqic/alfred-emoji-converter#readme",
   "dependencies": {
-    "alfy": "^2.0.0"
+    "alfy": "^2.0.0",
+    "dotenv": "^16.3.1"
   },
   "devDependencies": {
     "eslint": "^8.54.0"

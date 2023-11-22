@@ -4,11 +4,12 @@ export async function ask(description) {
   const gateway = process.env.GATEWAY || 'https://api.openai.com';
   const model = process.env.MODEL || 'gpt-3.5-turbo';
   const apiKey = process.env.API_KEY;
+  const useCache = process.env.USE_CACHE !== 'false';
 
   const cacheKey = `ask:${model}:${description}`;
   const cached = await alfy.cache.get(cacheKey);
 
-  if (cached) {
+  if (useCache && cached) {
     return cached;
   }
 
@@ -25,7 +26,7 @@ export async function ask(description) {
     body: JSON.stringify({
       model,
       messages: [{
-        content: '根据我的输入内容推荐一个最匹配的Emoji,不要输出Emoji之外的内容,未找到返回空字符串',
+        content: 'Suggest the most fitting Emoji based on my input;only output Emoji,return an empty string if not found',
         role: 'system',
       }, {
         content: description,

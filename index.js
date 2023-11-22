@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import alfy from 'alfy';
 import { ask } from './utils.js';
 
