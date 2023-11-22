@@ -1,6 +1,6 @@
 {
   "name": "alfred-emoji-converter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A text to emoji converter powered by ChatGPT",
   "main": "src/index.js",
   "type": "module",
